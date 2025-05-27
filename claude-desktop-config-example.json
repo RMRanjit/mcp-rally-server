@@ -1,0 +1,25 @@
+{
+  "mcpServers": {
+    "github": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-github"],
+      "env": {
+        "GITHUB_PERSONAL_ACCESS_TOKEN": "your_github_token"
+      }
+    },
+    "sequential-thinking": {
+      "command": "npx",
+      "args": ["-y", "@modelcontextprotocol/server-sequential-thinking"]
+    },
+    "rally": {
+      "command": "node",
+      "args": ["/Users/nullpointer/Code/MCP/mcp-rally-server/dist/index.js"],
+      "cwd": "/Users/nullpointer/Code/MCP/mcp-rally-server",
+      "env": {
+        "RALLY_API_KEY": "your_rally_api_key",
+        "RALLY_WORKSPACE": "your_rally_workspace",
+        "NODE_OPTIONS": "--no-warnings"
+      }
+    }
+  }
+}
